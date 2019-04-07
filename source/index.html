@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Седона — Главная страница</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__menu-btn" type="button">
+          <span class="main-nav__menu-closed visually-hidden">Открыть меню</span>
+          <span class="main-nav__menu-opened visually-hidden">Закрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo-and-video.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="feedback.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+
+    <section class="page-cover">
+      <div class="page-cover__wrapper">
+        <div class="page-cover__image page-cover__image--main-page">
+          <img class="page-cover__logo" src="http://placehold.it/282x214" width="282" height="214" alt="SEDONA">
+        </div>
+        <h1 class="page-cover__title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="page-cover__description">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+        </p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features__wrapper">
+        <h2 class="visually-hidden">Особенности Седоны</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__container">
+              <div class="features__tile">
+                <h3 class="features__title">Настоящий городок</h3>
+                <p class="features__number">
+                  — №1 —
+                </p>
+                <p class="features__description">
+                  Седона не аттракцион для туристов, там течет своя жизнь
+                </p>
+              </div>
+              <img class="features__image" src="http://placehold.it/800x400" width="800" height="400" alt="Обычный городок">
+            </div>
+            <ul class="features__container recommended-list">
+              <li class="features__tile recommended-list__item">
+                <h4 class="features__title">Жилье</h4>
+                <p class="features__description">
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="features__tile recommended-list__item">
+                <h4 class="features__title">Сувениры</h4>
+                <p class="features__description">
+                  Не только китайского, но и местного производства!
+                </p>
+              </li>
+              <li class="features__tile recommended-list__item">
+                <h4 class="features__title">Еда</h4>
+                <p class="features__description">
+                  Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="features__item">
+            <div class="features__container">
+              <div class="features__tile">
+                <h3 class="features__title">Там есть мост дьявола</h3>
+                <p class="features__number">
+                  — №2 —
+                </p>
+                <p class="features__description">
+                  Да, по нему можно пройти! Если вы осмелитесь, конечно
+                </p>
+              </div>
+              <img class="features__image" src="http://placehold.it/800x400" width="800" height="400" alt="Обычный городок">
+            </div>
+          </li>
+          <li class="features__item features__tile">
+            <h3 class="features__title">Небольшая площадь</h3>
+            <p class="features__number">
+              — №3 —
+            </p>
+            <p class="features__description">
+              Все интересные места находятся очень близко
+            </p>
+          </li>
+          <li class="features__item features__tile">
+            <h3 class="features__title">Красивая дорога</h3>
+            <p class="features__number">
+              — №4 —
+            </p>
+            <p class="features__description">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </li>
+          <li class="features__item features__tile">
+            <h3 class="features__title">Мало туристов</h3>
+            <p class="features__number">
+              — №5 —
+            </p>
+            <p class="features__description">
+              Большинство едет в гранд каньон и толпится там
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--<section class="interest">
+      Пока не надо размечать.
+    </section>-->
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__hashtag">#VisitSedona</p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютьюбе</span></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">
+          Разработано
+        </p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo-image" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
