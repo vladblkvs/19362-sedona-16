@@ -1,0 +1,16 @@
+.photo-gallery__tiles {
+  .list-style-none;
+  display: flex;
+  flex-direction: column;
+  font-size: @font-size-base;
+  line-height: @line-height-additional;
+}
+
+.photo-gallery__tile {
+  padding: 22px @side-padding 9px;
+  margin: 0 auto;
+  border-top: 1px solid #e5e5e5;
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
