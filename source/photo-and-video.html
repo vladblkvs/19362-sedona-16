@@ -4,14 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>Седона — Фото и Видео</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Седона">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__menu-btn" type="button">
@@ -30,7 +34,7 @@
               <a href="feedback.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -43,7 +47,7 @@
     <section class="page-cover">
       <div class="page-cover__wrapper">
         <div class="page-cover__image page-cover__image--secondary-page">
-          <img class="page-cover__logo" src="http://placehold.it/229x39" width="229" height="39" alt="SEDONA">
+          <img class="page-cover__logo" src="img/text-sedona.svg" width="229" height="39" alt="SEDONA">
         </div>
         <h1 class="page-cover__title">Фото и видео</h1>
         <p class="page-cover__description">
@@ -58,11 +62,11 @@
         <ul class="photo-gallery__tiles">
           <li class="photo-gallery__tile photo-item">
             <figure class="photo-item__image">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
+              <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Закат">
             </figure>
             <h3 class="photo-item__title">Неродные просторы</h3>
             <p class="photo-item__author">Автор фото: Борис</p>
-            <button class="photo-item__like-btn">
+            <button class="photo-item__like-btn" type="button">
               <div class="photo-item__like-icon"><!--Планирую поменять потом на псевдоэлемент--></div>
               <p class="photo-item__like-count">1350</p>
               <span class="visually-hidden">Нравится</span>
@@ -70,39 +74,39 @@
           </li>
           <li class="photo-gallery__tile photo-item">
             <figure class="photo-item__image">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
+              <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Кактус">
             </figure>
             <h3 class="photo-item__title">Местная растительность</h3>
             <p class="photo-item__author">Автор фото: Сергей</p>
-            <a class="photo-item__like-btn" href="#">
+            <button class="photo-item__like-btn" type="button">
               <div class="photo-item__like-icon"></div>
               <p class="photo-item__like-count">143</p>
               <span class="visually-hidden">Нравится</span>
-            </a>
+            </button>
           </li>
           <li class="photo-gallery__tile photo-item">
             <figure class="photo-item__image">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
+              <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дороги">
             </figure>
             <h3 class="photo-item__title">Дорога на север</h3>
             <p class="photo-item__author">Автор фото: Петр</p>
-            <a class="photo-item__like-btn" href="#">
+            <button class="photo-item__like-btn" type="button">
               <div class="photo-item__like-icon"></div>
               <p class="photo-item__like-count">96</p>
               <span class="visually-hidden">Нравится</span>
-            </a>
+            </button>
           </li>
           <li class="photo-gallery__tile photo-item">
             <figure class="photo-item__image">
-              <img src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
+              <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост">
             </figure>
             <h3 class="photo-item__title">Мост дьявола</h3>
             <p class="photo-item__author">Автор фото: Антон</p>
-            <a class="photo-item__like-btn" href="#">
+            <button class="photo-item__like-btn" type="button">
               <div class="photo-item__like-icon"></div>
               <p class="photo-item__like-count">254</p>
               <span class="visually-hidden">Нравится</span>
-            </a>
+            </button>
           </li>
         </ul>
       </div>
@@ -133,7 +137,7 @@
           Разработано
         </p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-image" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
     </div>
