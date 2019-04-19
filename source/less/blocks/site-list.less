@@ -38,3 +38,41 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .site-list__item {
+    border: none;
+    background-color: inherit;
+
+    &:first-child,
+    &:last-child {
+      border: none;
+      box-shadow: none;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: inherit;
+    }
+  }
+
+  .site-list__item a {
+    font-size: 14px;
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      color: @color-feature;
+    }
+
+    &:active {
+      color: #000000;
+    }
+  }
+}
