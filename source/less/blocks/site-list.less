@@ -39,15 +39,20 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .site-list {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
+    width: 20%;
     border: none;
     background-color: inherit;
+
+    &:nth-child(4n-1) {
+      margin-left: 20%;
+    }
 
     &:first-child,
     &:last-child {

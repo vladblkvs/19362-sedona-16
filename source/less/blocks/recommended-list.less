@@ -1,7 +1,7 @@
 .recommended-list {
   .list-style-none;
-  padding: 24px @side-padding 20px;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
 }
 
 .recommended-list__item {
@@ -23,18 +23,19 @@
   text-align: left;
 }
 
-@media (min-width: 768px) {
+.recommended-list__description br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
   .recommended-list {
-    padding: 24px 50px 44px;
-    margin: 0 auto;
-    max-width: 768px;
-    align-items: flex-start;
-    justify-content: space-between;
+    max-width: 100%;
+    flex-wrap: wrap;
   }
 
   .recommended-list__item {
-    padding: 11px 0 17px;
-    flex-basis: 168px;
+    padding: 50px 45px 61px;
+    width: calc(100% / 3 - 0.1px); //0.1px из-за бага в ie
 
     &:last-child {
       order: 2;
@@ -50,14 +51,18 @@
     margin-top: 21px;
     text-align: center;
   }
+
+  .recommended-list__description br {
+    display: inline;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
   .recommended-list {
     max-width: 1200px;
   }
 
   .recommended-list__item {
-    flex-basis: 300px;
+    padding: 50px 50px 82px;
   }
 }

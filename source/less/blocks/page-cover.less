@@ -50,7 +50,7 @@
   margin: 27px auto 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .page-cover__wrapper {
     padding-bottom: 68px;
   }
@@ -100,12 +100,7 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .page-cover {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
+@media (min-width: @desktop-width) {
   .page-cover__image {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center;
     background-size: cover;

@@ -20,31 +20,32 @@
   margin: 43px 0 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .page-footer__wrapper {
     padding: 36px 60px 36px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     max-width: 648px;
   }
 
+  .page-footer__hashtag {
+    width: calc(100% / 3);
+    text-align: left;
+  }
+
   .page-footer__social {
     margin-top: 0;
+    width: calc(100% / 3);
   }
 
   .page-footer__copyright {
     margin-top: 0;
+    width: calc(100% / 3);
   }
 }
 
-@media (min-width: 1200px) {
-  .page-footer {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
+@media (min-width: @desktop-width) {
   .page-footer__wrapper {
     max-width: 1200px;
   }

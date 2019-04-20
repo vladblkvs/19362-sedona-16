@@ -6,11 +6,6 @@
   .list-style-none;
 }
 
-.features__container {
-  display: flex;
-  flex-direction: column;
-}
-
 .features__tile {
   padding: 0 @side-padding;
   text-align: center;
@@ -60,7 +55,7 @@
 
 @media (min-width: @tablet-width) {
   .features__container {
-    flex-direction: row;
+    display: flex;
   }
 
   .features__image {
@@ -72,20 +67,22 @@
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    background-color: #eeeeee;
+  }
+
+  .features__item {
+    width: 100%;
+    background-color: #ffffff;
   }
 
   .features__item--additional {
     padding: 45px 40px 44px;
-    flex-basis: 176px;
+    width: calc(100% / 3 - 0.1px); //0.1px из-за бага в ie
+    background-color: #eeeeee;
   }
 
   .features__tile {
-    padding: 0 45px;
-  }
-
-  .features__tile--top-feature {
-    padding-top: 45px;
+    padding: 45px 45px 44px;
   }
 
   .features__title {
@@ -105,22 +102,12 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .features {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-
-  .features__container {
-    max-width: 1200px; //временно для ie
-  }
-
+@media (min-width: @desktop-width) {
   .features__image {
     min-width: 800px;
   }
 
   .features__item--additional {
     padding: 45px 50px 44px;
-    flex-basis: 300px;
   }
 }
