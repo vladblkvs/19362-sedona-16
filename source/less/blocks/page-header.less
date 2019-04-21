@@ -1,15 +1,43 @@
+.page-header {
+  background-color: #ffffff;
+}
+
 .page-header__wrapper {
   display: flex;
   flex-direction: column-reverse;
 }
 
 .page-header__logo {
+  position: relative;
+  z-index: 2;
   margin: 0 auto -27px;
   width: 102px;
-  height: 83px;
-  //размеры указаны для ie, иначе не центрирует
 }
 
 .page-header__logo-image {
   display: block;
+  width: 102px;
+  height: 83px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    flex-direction: column;
+  }
+
+  .page-header__logo {
+    margin-bottom: -83px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    margin-bottom: -96px;
+    width: 188px;
+  }
+
+  .page-header__logo-image {
+    width: 188px;
+    height: 96px;
+  }
 }

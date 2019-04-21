@@ -38,3 +38,46 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    width: 20%;
+    border: none;
+    background-color: inherit;
+
+    &:nth-child(4n-1) {
+      margin-left: 20%;
+    }
+
+    &:first-child,
+    &:last-child {
+      border: none;
+      box-shadow: none;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: inherit;
+    }
+  }
+
+  .site-list__item a {
+    font-size: 14px;
+    color: #000000;
+
+    &:hover,
+    &:focus {
+      color: @color-feature;
+    }
+
+    &:active {
+      color: #000000;
+    }
+  }
+}

@@ -9,11 +9,20 @@
 }
 
 .copyright__link {
-  margin-left: 7px;
+  margin-left: 6px;
+  margin-right: -5px;
   text-decoration: none;
   color: inherit;
 }
 
 .copyright__logo-image {
   display: block;
+  width: 34px;
+  height: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
 }
