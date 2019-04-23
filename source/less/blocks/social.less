@@ -11,5 +11,36 @@
   display: block;
   width: 46px;
   height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: @color-feature;
+
+  &:hover,
+  &:focus {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-active;
+  }
+
+  & svg {
+    fill: @color-contrast;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.social__link--twitter {
+  padding: 16px 14px 17px;
+}
+
+.social__link--facebook {
+  padding: 13px 18px 16px 20px;
+}
+
+.social__link--youtube {
+  padding: 17px 13px;
 }

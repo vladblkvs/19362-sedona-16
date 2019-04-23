@@ -1,21 +1,45 @@
 .recommended-list {
   .list-style-none;
+  padding-top: 15px;
+  padding-bottom: 29px;
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 320px;
 }
 
 .recommended-list__item {
-  padding: 11px 0 17px 50px;
-
-  &:first-child {
-    margin: 0;
-  }
+  padding: 20px 20px 8px 70px;
 }
 
 .recommended-list__title {
   .text-title();
+  position: relative;
   margin: 0;
   text-align: left;
+}
+
+.recommended-list__title::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.recommended-list__item--lodging .recommended-list__title::before {
+  background: url("../../img/icon-house.svg") no-repeat center;
+  background-size: 39px 37px;
+}
+
+.recommended-list__item--souvenirs .recommended-list__title::before {
+  background: url("../../img/icon-gift.svg") no-repeat center;
+  background-size: 32px 38px;
+}
+
+.recommended-list__item--food .recommended-list__title::before {
+  background: url("../../img/icon-burger.svg") no-repeat center;
+  background-size: 40px 35px;
 }
 
 .recommended-list__description {
@@ -29,22 +53,51 @@
 
 @media (min-width: @tablet-width) {
   .recommended-list {
+    padding: 0;
     max-width: 100%;
     flex-wrap: wrap;
   }
 
   .recommended-list__item {
-    padding: 50px 45px 61px;
+    padding: 159px 45px 61px;
     width: calc(100% / 3 - 0.1px); //0.1px из-за бага в ie
+    min-height: 330px;
+  }
 
-    &:last-child {
-      order: 2;
-    }
+  .recommended-list__item--lodging {
+    order: 1;
+  }
+
+  .recommended-list__item--souvenirs {
+    order: 3;
+  }
+
+  .recommended-list__item--food {
+    order: 2;
   }
 
   .recommended-list__title {
     font-size: @font-size-extra;
     text-align: center;
+  }
+
+  .recommended-list__title::before {
+    top: -104px;
+    left: calc(50% - 41px);
+    width: 80px;
+    height: 80px;
+  }
+
+  .recommended-list__item--lodging .recommended-list__title::before {
+    background-size: 75px 72px;
+  }
+
+  .recommended-list__item--souvenirs .recommended-list__title::before {
+    background-size: 64px 75px;
+  }
+
+  .recommended-list__item--food .recommended-list__title::before {
+    background-size: 77px 68px;
   }
 
   .recommended-list__description {
@@ -63,6 +116,6 @@
   }
 
   .recommended-list__item {
-    padding: 50px 50px 82px;
+    padding: 159px 50px 82px;
   }
 }

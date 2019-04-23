@@ -1,0 +1,21 @@
+.button {
+  padding: 16px 0;
+  display: block;
+  font-size: @font-size-extra;
+  line-height: @line-height-title;
+  font-weight: 700;
+  color: @color-contrast;
+  text-align: center;
+  text-decoration: none;
+  background-color: @color-feature;
+
+  &:hover,
+  &:focus {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @button-active;
+  }
+}

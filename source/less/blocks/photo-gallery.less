@@ -9,7 +9,7 @@
 }
 
 .photo-gallery__tile {
-  padding: 22px @side-padding 21px;
+  padding: 22px @side-padding 18px;
   margin: 0 auto;
   border-top: 1px solid #e5e5e5;
 
@@ -29,12 +29,18 @@
   .photo-gallery__tile {
     padding: 0;
     margin: 0;
-    flex-basis: 324px;
+    width: calc(100% / 2 - 0.1px);
     border: none;
+    background-color: #f2f2f2;
+
+    &:nth-child(2n+1) {
+      background-color: #eaeaea;
+    }
 
     &:first-child {
       margin: 0 auto;
-      flex-basis: 648px;
+      width: 100%;
+      background-color: #f2f2f2;
     }
 
     &:last-child {
@@ -54,10 +60,6 @@
   }
 
   .photo-gallery__tile {
-    flex-basis: 400px;
-
-    &:first-child {
-      flex-basis: 1200px;
-    }
+    width: calc(100% / 3 - 0.1px);
   }
 }
