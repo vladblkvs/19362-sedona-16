@@ -21,6 +21,7 @@
 
 .photo-item__like-btn {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 7px;
   padding: 0;
   border: none;
@@ -43,9 +44,16 @@
     max-width: 648px;
   }
 
-  .photo-item__info {
+  .photo-item__footer {
     position: relative;
+    display: flex;
+    justify-content: space-between;
     padding: 15px 20px 17px;
+    overflow: hidden;
+  }
+
+  .photo-item__info {
+    max-height: 200px;
   }
 
   .photo-item__title {
@@ -53,11 +61,8 @@
   }
 
   .photo-item__like-btn {
-    position: absolute;
-    bottom: 30px;
-    right: 0;
-    padding-right: 15px;
-    min-width: 85px;
+    margin-top: 4px;
+    min-width: 70px;
   }
 
   .photo-item__like-icon {
@@ -68,12 +73,14 @@
 
 @media (min-width: @desktop-width) {
   .photo-item {
+    position: relative;
     max-width: 1200px;
   }
 
-  .photo-item__info {
-    position: relative;
-    margin-top: -81px;
+  .photo-item__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
   }
 

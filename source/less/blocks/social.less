@@ -1,6 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social__item:not(:first-child) {
@@ -8,7 +9,9 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-position: center;
@@ -31,16 +34,4 @@
   &:active svg {
     opacity: 0.3;
   }
-}
-
-.social__link--twitter {
-  padding: 16px 14px 17px;
-}
-
-.social__link--facebook {
-  padding: 13px 18px 16px 20px;
-}
-
-.social__link--youtube {
-  padding: 17px 13px;
 }

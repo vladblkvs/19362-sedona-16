@@ -4,23 +4,30 @@
 
 .main-nav__menu-btn {
   position: absolute;
-  bottom: -40px;
+  top: 17px;
   right: 20px;
   width: 23px;
   height: 22px;
   border: 0;
+  background: url("../../img/icon-cross.svg") no-repeat center;
+}
+
+.main-nav--closed .main-nav__menu-btn {
   background: url("../../img/icon-menu.svg") no-repeat center;
 }
 
-.main-nav__menu-btn::before {
-  content: "";
-  position: absolute;
-  top: -224px;
-  right: 0;
-  display: block;
-  width: 23px;
-  height: 22px;
-  background: url("../../img/icon-cross.svg") no-repeat center;
+.main-nav--nojs .main-nav__menu-btn {
+  display: none;
+}
+
+@media (max-width: calc(@tablet-width - 1px)) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
