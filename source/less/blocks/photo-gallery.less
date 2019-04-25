@@ -9,7 +9,7 @@
 }
 
 .photo-gallery__tile {
-  padding: 22px @side-padding 21px;
+  padding: 22px @side-padding 18px;
   margin: 0 auto;
   border-top: 1px solid #e5e5e5;
 
@@ -29,17 +29,23 @@
   .photo-gallery__tile {
     padding: 0;
     margin: 0;
-    flex-basis: 324px;
+    width: 50%;
     border: none;
+    background-color: #f2f2f2;
 
-    &:first-child {
-      margin: 0 auto;
-      flex-basis: 648px;
+    &:nth-child(2n+1) {
+      background-color: #eaeaea;
     }
 
     &:last-child {
       border: none;
     }
+  }
+
+  .photo-gallery__tile.photo-gallery__tile--wide {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f2f2f2;
   }
 }
 
@@ -54,10 +60,6 @@
   }
 
   .photo-gallery__tile {
-    flex-basis: 400px;
-
-    &:first-child {
-      flex-basis: 1200px;
-    }
+    width: 33.333333%;
   }
 }

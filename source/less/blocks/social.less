@@ -1,6 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social__item:not(:first-child) {
@@ -8,8 +9,29 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: @color-feature;
+
+  &:hover,
+  &:focus {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-active;
+  }
+
+  & svg {
+    fill: @color-contrast;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }

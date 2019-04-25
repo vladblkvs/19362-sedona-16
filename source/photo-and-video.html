@@ -5,171 +5,235 @@
   <meta charset="utf-8">
   <title>Седона — Фото и Видео</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&amp;subset=cyrillic">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <svg style="display: none;">
+    <symbol id="like-btn" viewBox="0 0 22 20">
+      <path d="M12.383 3.646L11.22 9h8.68v2 .058L17 18H8V8.03l.014-.015 4.37-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/>
+    </symbol>
+  </svg>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+          </picture>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__menu-btn" type="button">
+            <span class="main-nav__menu-closed visually-hidden">Открыть меню</span>
+            <span class="main-nav__menu-opened visually-hidden">Закрыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a>Фото и видео</a>
+              </li>
+              <li class="site-list__item">
+                <a href="feedback.html">Форма отзыва</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__menu-btn" type="button">
-          <span class="main-nav__menu-closed visually-hidden">Открыть меню</span>
-          <span class="main-nav__menu-opened visually-hidden">Закрыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+    <main class="page-main">
+
+      <section class="page-cover">
+        <div class="page-cover__wrapper">
+          <div class="page-cover__image page-cover__image--secondary-page">
+            <img class="page-cover__logo" src="img/text-sedona.svg" width="229" height="39" alt="SEDONA">
+          </div>
+          <h1 class="page-cover__title page-cover__title--secondary-page">Фото и видео</h1>
+          <p class="page-cover__description">
+            Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.
+          </p>
+        </div>
+      </section>
+
+      <section class="photo-gallery">
+        <div class="photo-gallery__wrapper">
+          <h2 class="visually-hidden">Галерея фотографий</h2>
+          <ul class="photo-gallery__tiles">
+            <li class="photo-gallery__tile photo-gallery__tile--wide">
+              <div class="photo-item">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                  <img src="img/photo-sunset-mobile@1x.jpg" alt="Закат">
+                </picture>
+                <div class="photo-item__footer">
+                  <div class="photo-item__info">
+                    <h3 class="photo-item__title">Неродные просторы</h3>
+                    <p class="photo-item__author">Автор фото: Борис</p>
+                  </div>
+                  <button class="photo-item__like-btn" type="button">
+                    <svg class="photo-item__like-icon" width="22" height="20">
+                      <use xlink:href="#like-btn"></use>
+                    </svg>
+                    <span class="photo-item__like-count">1350</span>
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                </div>
+              </div>
             </li>
-            <li class="site-list__item">
-              <a>Фото и видео</a>
+            <li class="photo-gallery__tile">
+              <div class="photo-item">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                  <img src="img/photo-cactus-mobile@1x.jpg" alt="Кактус">
+                </picture>
+                <div class="photo-item__footer">
+                  <div class="photo-item__info">
+                    <h3 class="photo-item__title">Местная растительность</h3>
+                    <p class="photo-item__author">Автор фото: Сергей</p>
+                  </div>
+                  <button class="photo-item__like-btn" type="button">
+                    <svg class="photo-item__like-icon" width="22" height="20">
+                      <use xlink:href="#like-btn"></use>
+                    </svg>
+                    <span class="photo-item__like-count">143</span>
+                    <span class="visually-hidden">Нравится</span>
+                </button>
+                </div>
+              </div>
             </li>
-            <li class="site-list__item">
-              <a href="feedback.html">Форма отзыва</a>
+            <li class="photo-gallery__tile">
+              <div class="photo-item">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                  <img src="img/photo-roads-mobile@1x.jpg" alt="Дороги">
+                </picture>
+                <div class="photo-item__footer">
+                  <div class="photo-item__info">
+                    <h3 class="photo-item__title">Дорога на север</h3>
+                    <p class="photo-item__author">Автор фото: Петр</p>
+                  </div>
+                  <button class="photo-item__like-btn" type="button">
+                    <svg class="photo-item__like-icon" width="22" height="20">
+                      <use xlink:href="#like-btn"></use>
+                    </svg>
+                    <span class="photo-item__like-count">96</span>
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                </div>
+              </div>
             </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
+            <li class="photo-gallery__tile">
+              <div class="photo-item">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                  <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост">
+                </picture>
+                <div class="photo-item__footer">
+                  <div class="photo-item__info">
+                    <h3 class="photo-item__title">Мост дьявола</h3>
+                    <p class="photo-item__author">Автор фото: Антон</p>
+                  </div>
+                  <button class="photo-item__like-btn" type="button">
+                    <svg class="photo-item__like-icon" width="22" height="20">
+                      <use xlink:href="#like-btn"></use>
+                    </svg>
+                    <span class="photo-item__like-count">254</span>
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
-  </header>
+      </section>
 
-  <main class="page-main">
-
-    <section class="page-cover">
-      <div class="page-cover__wrapper">
-        <div class="page-cover__image page-cover__image--secondary-page">
-          <img class="page-cover__logo" src="img/text-sedona.svg" width="229" height="39" alt="SEDONA">
+      <!--<section class="video">
+        <div class="video__wrapper">
+          <h2 class="visually-hidden">Видеопрезентация</h2>
+          <h3 class="video__title final-question">Все еще сомневаетесь?</h3>
         </div>
-        <h1 class="page-cover__title page-cover__title--secondary-page">Фото и видео</h1>
-        <p class="page-cover__description">
-          Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.
-        </p>
-      </div>
-    </section>
+      </section>-->
 
-    <section class="photo-gallery">
-      <div class="photo-gallery__wrapper">
-        <h2 class="visually-hidden">Галерея фотографий</h2>
-        <ul class="photo-gallery__tiles">
-          <li class="photo-gallery__tile photo-item">
-            <figure class="photo-item__image">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-                <img src="img/photo-sunset-mobile@1x.jpg" alt="Закат">
-              </picture>
-              <figcaption class="photo-item__info">
-                <h3 class="photo-item__title">Неродные просторы</h3>
-                <p class="photo-item__author">Автор фото: Борис</p>
-              </figcaption>
-              <button class="photo-item__like-btn" type="button">
-                <div class="photo-item__like-icon"><!--Планирую поменять потом на псевдоэлемент--></div>
-                <p class="photo-item__like-count">1350</p>
-                <span class="visually-hidden">Нравится</span>
-              </button>
-            </figure>
-          </li>
-          <li class="photo-gallery__tile photo-item">
-            <figure class="photo-item__image">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
-                <img src="img/photo-cactus-mobile@1x.jpg" alt="Кактус">
-              </picture>
-              <figcaption class="photo-item__info">
-                <h3 class="photo-item__title">Местная растительность</h3>
-                <p class="photo-item__author">Автор фото: Сергей</p>
-              </figcaption>
-              <button class="photo-item__like-btn" type="button">
-                <div class="photo-item__like-icon"></div>
-                <p class="photo-item__like-count">143</p>
-                <span class="visually-hidden">Нравится</span>
-              </button>
-            </figure>
-          </li>
-          <li class="photo-gallery__tile photo-item">
-            <figure class="photo-item__image">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
-                <img src="img/photo-roads-mobile@1x.jpg" alt="Дороги">
-              </picture>
-              <figcaption class="photo-item__info">
-                <h3 class="photo-item__title">Дорога на север</h3>
-                <p class="photo-item__author">Автор фото: Петр</p>
-              </figcaption>
-              <button class="photo-item__like-btn" type="button">
-                <div class="photo-item__like-icon"></div>
-                <p class="photo-item__like-count">96</p>
-                <span class="visually-hidden">Нравится</span>
-              </button>
-            </figure>
+    </main>
 
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__hashtag">#VisitSedona</p>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+
+              <svg width="18" height="15">
+                <path d="M11.6.2c1.7-.5 3.2.2 3.8 1.1l2.2-.7c0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2.1C16.1 10.7 13 15.2 5.7 15c-.5 0 .1 0-.5 0-.4 0-4.4-.4-5.1-1.9 2.4.2 4.1-.4 4.9-1.1-1-.3-2.9-.5-3.2-3 .4.1.6.2 1.3.1C1.9 8.3.4 7.6.5 5.3c.3.3 1.1.5 1.5.5-.8-.2-2.1-3.4-1-4.9 2 1.9 3.9 3.6 7.6 3.8.1-2.4 1.2-3.9 3-4.5z" fill="#fff"/>
+              </svg>
+
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
           </li>
-          <li class="photo-gallery__tile photo-item">
-            <figure class="photo-item__image">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
-                <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост">
-              </picture>
-              <figcaption class="photo-item__info">
-                <h3 class="photo-item__title">Мост дьявола</h3>
-                <p class="photo-item__author">Автор фото: Антон</p>
-              </figcaption>
-              <button class="photo-item__like-btn" type="button">
-                <div class="photo-item__like-icon"></div>
-                <p class="photo-item__like-count">254</p>
-                <span class="visually-hidden">Нравится</span>
-              </button>
-            </figure>
+          <li class="social__item">
+            <a class="social__link" href="#">
+
+              <svg width="9" height="19">
+                <path d="M6.5 3.4H9V0H6C2.8.2 1.6 2.4 2 6.1H0v3.5h2.1v9.3H6V9.6h3V6.1H6c0-1 0-2.4.5-2.7z"/>
+              </svg>
+
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+
+              <svg width="20" height="14">
+                <path d="M17.2 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.4c1.6 0 2.8-1.3 2.8-2.8V2.8c.1-1.5-1.2-2.8-2.8-2.8zM7 10.4V3.6L13.9 7 7 10.4z"/>
+              </svg>
+
+              <span class="visually-hidden">Мы на Ютьюбе</span>
+            </a>
           </li>
         </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">
+            Разработано
+          </p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+
+            <svg class="copyright__logo-image" width="27" height="34">
+              <title>HtmlAcademy</title>
+              <path d="M13.62.017L13.472 0 0 1.412v24.66L13.473 34.1l13.472-8.015V1.412L13.62.017zm11.4 12.1L13.495 5.334l-.001-.104-.087.05-.088-.056v.11L1.925 12.118v-8.97l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.48 2.64-7.093-4.22-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.03-1.787-.014 1.413 1.853 1.09-1.8 1.08-11.356-6.75 11.37-6.835zm-11.48 8.34l11.41 6.79.016 1.044L5.4 18.234l-.015 1.416 7.98 4.795.018 1.076-7.973-4.74-.013 1.414 8.067 4.847 8.143-4.872-.01-5.177 3.415-2.036v10.02L13.472 31.85 1.925 24.98v-9.852z"/>
+            </svg>
+
+          </a>
+        </div>
       </div>
-    </section>
-
-    <!--<section class="video">
-      Пока не надо размечать.
-    </section>-->
-
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <p class="page-footer__hashtag">#VisitSedona</p>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютьюбе</span></a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">
-          Разработано
-        </p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="34" height="34" alt="HTML Academy">
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="js/picturefill.min.js"></script>
+  <script>
+    var navMain = document.querySelector(".main-nav");
+    var menuBtn = document.querySelector(".main-nav__menu-btn");
+
+    navMain.classList.remove('main-nav--nojs');
+
+    menuBtn.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+      } else {
+        navMain.classList.add('main-nav--closed');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

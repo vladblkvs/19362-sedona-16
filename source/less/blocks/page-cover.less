@@ -1,5 +1,17 @@
 .page-cover {
+  position: relative;
+  overflow: hidden;
   background-color: #ffffff;
+}
+
+.page-cover--main-page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 384px);
+  border: 384px solid @color-feature;
+  border-top: 37px solid #ffffff;
+  border-bottom: none;
 }
 
 .page-cover__wrapper {
@@ -11,7 +23,29 @@
 }
 
 .page-cover__image {
+  position: relative;
+  overflow: hidden;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+}
+
+.page-cover__image::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 160px);
+  border: 160px solid #ffffff;
+  border-top: 27px solid transparent;
+  border-bottom: none;
+}
+
+.page-cover__image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 600px);
+  border: 600px solid #ffffff;
+  border-top: 57px solid transparent;
+  border-bottom: none;
 }
 
 .page-cover__image--main-page {
@@ -51,6 +85,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-cover::after {
+    display: none;
+  }
+
   .page-cover__wrapper {
     padding-bottom: 68px;
   }
@@ -62,6 +100,13 @@
   .page-cover__image {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
     background-size: cover;
+  }
+
+
+  .page-cover__image::before {
+    left: calc(50% - 351px);
+    border-width: 351px;
+    border-top: 57px solid transparent;
   }
 
   .page-cover__image--secondary-page {

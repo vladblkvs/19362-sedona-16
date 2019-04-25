@@ -12,8 +12,7 @@
 }
 
 .features__tile--top-feature {
-  padding-top: 39px;
-  padding-bottom: 40px;
+  padding: 40px 0;
   flex-grow: 1;
   color: @color-contrast;
   background-color: @color-feature;
@@ -21,8 +20,22 @@
 
 .features__item--additional {
   padding: 27px @side-padding;
+  min-height: 167px;
   text-align: center;
   background-color: #eeeeee;
+}
+
+.features__item--additional::after {
+  content: "";
+  position: relative;
+  bottom: -27px;
+  display: block;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.features__item--additional:last-child::after {
+  display: none;
 }
 
 .features__title {
@@ -38,10 +51,9 @@
   display: none;
 }
 
-.features__image {
+.features__image img {
   margin: 0 auto;
   display: block;
-  height: 260px;
   width: auto;
 }
 
@@ -56,12 +68,21 @@
 @media (min-width: @tablet-width) {
   .features__container {
     display: flex;
+    min-height: 256px;
+    overflow: hidden;
   }
 
   .features__image {
-    min-width: 512px;
-    height: 256px;
-    object-fit: cover;
+    position: relative;
+    width: 66.666666%;
+    display: flex;
+  }
+
+  .features__image img {
+    position: absolute;
+    align-self: center;
+    width: 100%;
+    min-height: 256px;
   }
 
   .features__list {
@@ -75,14 +96,28 @@
     background-color: #ffffff;
   }
 
+  .features__item:nth-child(2n) .features__container {
+    flex-direction: row-reverse;
+  }
+
   .features__item--additional {
     padding: 45px 40px 44px;
-    width: calc(100% / 3 - 0.1px); //0.1px из-за бага в ie
+    width: 33.333333%;
+    min-height: 256px;
     background-color: #eeeeee;
   }
 
+  .features__item--additional::after {
+    display: none;
+  }
+
   .features__tile {
-    padding: 45px 45px 44px;
+    padding: 45px 43px 44px;
+  }
+
+  .features__tile--top-feature {
+    width: 33.333333%;
+    min-height: 256px;
   }
 
   .features__title {
@@ -103,10 +138,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .features__image {
-    min-width: 800px;
-  }
-
   .features__item--additional {
     padding: 45px 50px 44px;
   }
