@@ -1,3 +1,131 @@
 .video {
   background-color: #ffffff;
 }
+
+.video__wrapper {
+  padding: 34px 0 0;
+}
+
+.video__image {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.video__volume-scale-container {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  z-index: 2;
+  padding: 22px 22px 20px;
+  max-width: 280px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__volume-scale {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video__volume-toggle {
+  position: absolute;
+  top: -3px;
+  left: 36px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.video__controls-wrapper {
+  position: relative;
+  display: flex;
+  padding: 0 5px;
+  margin: 0 auto;
+  max-width: 280px;
+  background-color: #f2f2f2;
+}
+
+.video__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:first-child {
+    margin-right: 101px;
+  }
+
+  &:last-child {
+    margin-left: 1px;
+  }
+}
+
+.video__control svg {
+  fill: #5c6870;
+}
+
+@media (min-width: @tablet-width) {
+  .video__wrapper {
+    padding: 71px 0 0;
+  }
+
+  .video__image {
+    margin-top: 73px;
+  }
+
+  .video__controls-wrapper {
+    padding: 0 23px 0 15px;
+    margin-top: -93px;
+    max-width: 648px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .video__volume-scale-container {
+    position: unset;
+    padding: 45px 0;
+    margin: 0 30px 0 22px;
+    max-width: 390px;
+    background-color: transparent;
+  }
+
+  .video__volume-scale {
+    width: 389px;
+  }
+
+  .video__volume-toggle {
+    left: 113px;
+  }
+
+  .video__control {
+    height: 93px;
+  }
+
+  .video__control:first-child {
+    margin-right: 0;
+  }
+
+  .video__control svg {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__controls-wrapper {
+    max-width: 800px;
+  }
+
+  .video__volume-scale-container {
+    max-width: 540px;
+  }
+
+  .video__volume-scale {
+    width: 540px;
+  }
+}
