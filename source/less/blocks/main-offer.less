@@ -1,0 +1,27 @@
+.main-offer {
+  line-height: @line-height-additional;
+  margin: 19px auto 0;
+  max-width: 264px;
+  text-align: center;
+
+  & br {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+    .main-offer {
+    margin-top: 31px;
+    max-width: 458px;
+
+    & br {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-offer {
+    margin-top: 35px;
+  }
+}
