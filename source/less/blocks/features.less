@@ -41,14 +41,14 @@
 .features__title {
   .text-title();
   margin: 0;
+
+  & br {
+    display: none;
+  }
 }
 
 .features__title--top-feature {
   color: @color-contrast;
-}
-
-.features__title br {
-  display: none;
 }
 
 .features__image img {
@@ -122,10 +122,14 @@
 
   .features__title {
     font-size: @font-size-extra;
-  }
 
-  .features__title br {
-    display: inline;
+    & span {
+      display: none;
+    }
+
+    & br {
+      display: inline;
+    }
   }
 
   .features__number {

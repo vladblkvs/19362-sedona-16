@@ -45,10 +45,10 @@
 .recommended-list__description {
   margin: 14px 0 0 0;
   text-align: left;
-}
 
-.recommended-list__description br {
-  display: none;
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -103,10 +103,14 @@
   .recommended-list__description {
     margin-top: 21px;
     text-align: center;
-  }
 
-  .recommended-list__description br {
-    display: inline;
+    & span {
+      display: none;
+    }
+
+    & br {
+      display: inline;
+    }
   }
 }
 

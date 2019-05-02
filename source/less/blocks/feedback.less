@@ -1,0 +1,247 @@
+.feedback {
+  background-color: #ffffff;
+}
+
+.feedback__form {
+  padding-bottom: 37px;
+}
+
+.feedback__form-wrapper {
+  padding: 17px @side-padding 22px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.feedback__fields {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 648px;
+  border: none;
+}
+
+.feedback__field-title {
+  .text-title;
+}
+
+.feedback__input-field {
+  margin: 20px 0 0;
+}
+
+.feedback__form-wrapper--contacts .feedback__input-field:not(:first-child) {
+  margin-top: 12px;
+}
+
+.feedback__option-title {
+  min-width: 207px;
+  font-size: @font-size-title;
+  line-height: @line-height-title;
+  font-weight: 700;
+  color: @color-title;
+  text-transform: none;
+}
+
+.feedback__form-wrapper--imspanssions .feedback__option-title {
+  margin-top: 13px;
+
+  &:first-of-type {
+    margin-top: 23px;
+  }
+}
+
+.feedback__form-wrapper--visited-sights .feedback__option-title {
+  margin-top: 24px;
+
+  &:first-of-type {
+    margin-top: 17px;
+  }
+}
+
+.feedback__form-wrapper--emotions .feedback__input-field {
+  margin-top: 17px;
+}
+
+.feedback__submit-btn {
+  margin: 29px auto 0;
+  width: 280px;
+  border: none;
+}
+
+.feedback__options {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+.feedback__option-title::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 23px;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+}
+
+.feedback__option-title:hover::before,
+.feedback__option-title:focus::before {
+  background-color: #e5e5e5;
+}
+
+.feedback__option-title:active::before {
+  background-color: #d5d5d5;
+}
+
+.radio + .feedback__option-title::before {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.radio:checked + .feedback__option-title::before {
+  border: 17px solid #f2f2f2;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+.radio:checked:hover + .feedback__option-title::before,
+.radio:checked:focus + .feedback__option-title::before {
+  border-color: #e5e5e5;
+}
+
+.radio:checked:active + .feedback__option-title::before {
+  border-color: #d5d5d5;
+  background-color: #a4a4a4;
+}
+
+.checkbox + .feedback__option-title::before {
+  border-radius: 5px;
+}
+
+.checkbox:checked + .feedback__option-title::before {
+  background-image: url("/img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 56px;
+}
+
+.checkbox:checked:hover + .feedback__option-title::before,
+.checkbox:checked:focus + .feedback__option-title::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox:checked:active + .feedback__option-title::before {
+  background-color: #d5d5d5;
+  background-position: bottom center;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feedback__form-wrapper {
+    padding: 17px 60px 22px;
+    border: none;
+  }
+
+  .feedback__form-wrapper .feedback__fields {
+    max-width: 960px;
+  }
+
+  .feedback__form-wrapper--user-info {
+    order: 2;
+    width: 50%;
+    max-width: 540px;
+    border-left: 1px solid #e5e5e5;
+  }
+
+  .feedback__form-wrapper--contacts {
+    order: 3;
+    width: 100%;
+  }
+
+  .feedback__form-wrapper--imspanssions {
+    order: 1;
+    width: 50%;
+    max-width: 540px;
+  }
+
+  .feedback__form-wrapper--visited-sights {
+    order: 4;
+    width: 100%;
+  }
+
+  .feedback__form-wrapper--emotions {
+    order: 5;
+    width: 100%;
+  }
+
+  .feedback__submit-btn {
+    order: 6;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__options {
+    flex-direction: row;
+    padding-left: 11px;
+    margin: 0 auto;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__option-title {
+    max-width: 240px;
+
+    &:nth-of-type(2n+1) {
+      flex-grow: 1;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 19px;
+    }
+  }
+
+  .feedback__field-title {
+    font-size: @font-size-extra;
+  }
+
+  .feedback__options {
+    max-width: 480px;
+  }
+
+  .feedback__form-wrapper--user-info .feedback__field-title,
+  .feedback__form-wrapper--imspanssions .feedback__field-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback__form-wrapper {
+    padding: 17px 120px 22px;
+  }
+
+  .feedback__form-wrapper--user-info {
+    padding-left: 78px;
+  }
+
+  .feedback__form-wrapper--imspanssions .feedback__field-title {
+    padding-left: 76px;
+  }
+
+  .feedback__form-wrapper--user-info,
+  .feedback__form-wrapper--imspanssions {
+    max-width: 600px;
+  }
+
+  .feedback__options {
+    max-width: 960px;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__options {
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__option-title:nth-of-type(2n) {
+    margin-left: 0;
+  }
+}

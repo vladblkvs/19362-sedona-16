@@ -6,6 +6,8 @@
   <title>Седона — Фото и Видео</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="spanload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="spanload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -60,7 +62,7 @@
           </div>
           <h1 class="page-cover__title page-cover__title--secondary-page">Фото и видео</h1>
           <p class="page-cover__description">
-            Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.
+            Не можете решиться на путешествие из-за курса?<span>&nbsp;</span><br>Фотографии помогут вам забыть о политике и экономике.
           </p>
         </div>
       </section>
@@ -181,7 +183,7 @@
         <div class="video__wrapper">
           <h2 class="visually-hidden">Видеопрезентация</h2>
           <h3 class="main-question">Все еще сомневаетесь?</h3>
-          <p class="main-offer">Смотрите видеопрезентацию и скорее за билетами, пока <br>они не подорожали в очередной раз!</p>
+          <p class="main-offer">Смотрите видеопрезентацию и скорее за билетами, пока<span>&nbsp;</span><br>они не подорожали в очередной раз!</p>
           <picture class="video__image">
             <source type="image/webp" media="(min-width: 1200px)" srcset="/img/video-desktop@1x.webp 1x, /img/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="/img/video-tablet@1x.webp 1x, /img/video-tablet@2x.webp 2x">
@@ -259,7 +261,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__logo-image" width="27" height="34">
               <title>HtmlAcademy</title>
-              <use xlink:href="#icon-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -267,21 +269,7 @@
     </footer>
   </div>
   <script src="/js/picturefill.min.js"></script>
-  <script>
-    var navMain = document.querySelector(".main-nav");
-    var menuBtn = document.querySelector(".main-nav__menu-btn");
-
-    navMain.classList.remove('main-nav--nojs');
-
-    menuBtn.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-      } else {
-        navMain.classList.add('main-nav--closed');
-      }
-    });
-
-  </script>
+  <script src="/js/script.min.js"></script>
 </body>
 
 </html>
