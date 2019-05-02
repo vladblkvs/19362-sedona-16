@@ -6,6 +6,8 @@
   <title>Седона — Форма отзыва</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -110,7 +112,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__logo-image" width="27" height="34">
               <title>HtmlAcademy</title>
-              <use xlink:href="#icon-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -118,21 +120,7 @@
     </footer>
   </div>
   <script src="/js/picturefill.min.js"></script>
-  <script>
-    var navMain = document.querySelector(".main-nav");
-    var menuBtn = document.querySelector(".main-nav__menu-btn");
-
-    navMain.classList.remove('main-nav--nojs');
-
-    menuBtn.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-      } else {
-        navMain.classList.add('main-nav--closed');
-      }
-    });
-
-  </script>
+  <script src="/js/script.min.js"></script>
 </body>
 
 </html>
