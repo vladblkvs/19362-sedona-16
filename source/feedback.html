@@ -71,8 +71,8 @@
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="feedback__form" method="GET" action="https://echo.htmlacademy.ru">
           <div class="feedback__form-wrapper feedback__form-wrapper--user-info">
-            <fieldset class="feedback__fields">
-              <legend class="feedback__field-title">Представьтесь:</legend>
+            <div class="feedback__fields">
+              <h3 class="feedback__field-title">Представьтесь:</h3>
               <p class="feedback__input-field input-field">
                 <label class="input-field__label input-field__label--side" for="user-name">Имя*:</label>
                 <input class="input-field__string" id="user-name" type="text" name="Name" placeholder="Петр">
@@ -85,24 +85,24 @@
                 <label class="input-field__label input-field__label--side" for="user-patronymic">Отчество:</label>
                 <input class="input-field__string" id="user-patronymic" type="text" name="Patronymic" placeholder="Александрович">
               </p>
-            </fieldset>
+            </div>
           </div>
           <div class="feedback__form-wrapper feedback__form-wrapper--contacts">
-            <fieldset class="feedback__fields">
-              <legend class="feedback__field-title">Контактная информация:</legend>
+            <div class="feedback__fields">
+              <h3 class="feedback__field-title">Контактная информация:</h3>
               <p class="feedback__input-field input-field">
-                <label class="input-field__label input-field__label--atop" for="tel">Контактный телефон*:</label>
+                <label class="input-field__label input-field__label--atop" for="tel"><span>Контактный</span> телефон*:</label>
                 <input class="input-field__string" id="tel" type="tel" name="Telephone number" placeholder="Введите телефон">
               </p>
               <p class="feedback__input-field input-field">
                 <label class="input-field__label input-field__label--atop" for="email">Электронная почта*:</label>
                 <input class="input-field__string" id="email" type="email" name="Telephone number" placeholder="Введите e-mail">
               </p>
-            </fieldset>
+            </div>
           </div>
           <div class="feedback__form-wrapper feedback__form-wrapper--imspanssions">
-            <fieldset class="feedback__fields">
-              <legend class="feedback__field-title">Ваше общее впечатление:</legend>
+            <div class="feedback__fields">
+              <h3 class="feedback__field-title">Ваше общее впечатление:</h3>
               <div class="feedback__options">
                 <input class="radio visually-hidden" id="positive" type="radio" name="Overall imspanssion" value="positive" checked>
                 <label class="feedback__option-title" for="positive">Скорее положительное</label>
@@ -111,11 +111,11 @@
                 <input class="radio visually-hidden" id="hard-to-answer" type="radio" name="Overall imspanssion" value="hard to answer">
                 <label class="feedback__option-title" for="hard-to-answer">Затрудняюсь ответить</label>
               </div>
-            </fieldset>
+            </div>
           </div>
           <div class="feedback__form-wrapper feedback__form-wrapper--visited-sights">
-            <fieldset class="feedback__fields">
-              <legend class="feedback__field-title">Посещенные<br>достопримечательности:</legend>
+            <div class="feedback__fields">
+              <h3 class="feedback__field-title">Посещенные<br>достопримечательности:</h3>
               <div class="feedback__options">
                 <input class="checkbox visually-hidden" id="devil-bridge" type="checkbox" name="Attractions" value="Bridge of Devil" checked>
                 <label class="feedback__option-title" for="devil-bridge">Мост Дьявола</label>
@@ -126,15 +126,15 @@
                 <input class="checkbox visually-hidden" id="red-rocks" type="checkbox" name="Attractions" value="Red Rock State Park">
                 <label class="feedback__option-title" for="red-rocks">Красные скалы</label>
               </div>
-            </fieldset>
+            </div>
           </div>
           <div class="feedback__form-wrapper feedback__form-wrapper--emotions">
-            <fieldset class="feedback__fields">
-              <legend class="feedback__field-title">Опишите свои эмоции:</legend>
+            <div class="feedback__fields">
+              <h3 class="feedback__field-title">Опишите свои эмоции:</h3>
               <p class="feedback__input-field input-field">
                 <textarea class="input-field__string input-field__string--textarea" id="delight" name="Delights" placeholder="Опишите подробно все свои восторги"></textarea>
               </p>
-            </fieldset>
+            </div>
           </div>
           <button class="feedback__submit-btn button" type="submit">Отправить отзыв</button>
         </form>

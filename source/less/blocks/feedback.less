@@ -20,6 +20,8 @@
 
 .feedback__field-title {
   .text-title;
+  margin: 0;
+  width: 100%;
 }
 
 .feedback__input-field {
@@ -232,6 +234,12 @@
     max-width: 600px;
   }
 
+  .feedback__form-wrapper--contacts .feedback__fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .feedback__options {
     max-width: 960px;
   }
@@ -243,5 +251,19 @@
 
   .feedback__form-wrapper--visited-sights .feedback__option-title:nth-of-type(2n) {
     margin-left: 0;
+  }
+
+  .feedback__form-wrapper--contacts .input-field__label--atop {
+    padding: 0;
+    margin-right: 16px;
+    width: fit-content;
+
+    & span {
+      display: none;
+    }
+  }
+
+  .feedback__form-wrapper--contacts .input-field__string {
+    min-width: 315px;
   }
 }
