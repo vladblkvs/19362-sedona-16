@@ -6,8 +6,8 @@
   <title>Седона — Главная страница</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/style.min.css">
-  <link rel="onload" href="/fonts/ptsans.woff2" as="font">
-  <link rel="onload" href="/fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -30,8 +30,8 @@
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__menu-btn" type="button">
-            <span class="main-nav__menu-closed visually-hidden">Открыть меню</span>
-            <span class="main-nav__menu-opened visually-hidden">Закрыть меню</span>
+            <span class="a11y-menu-btn visually-hidden">Открыть меню</span>
+            <span class="a11y-menu-btn visually-hidden">Закрыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">

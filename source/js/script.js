@@ -1,14 +1,19 @@
 var navMain = document.querySelector(".main-nav");
 if (navMain) {
-  var menuBtn = document.querySelector(".main-nav__menu-btn");
+  var menuBtn = navMain.querySelector(".main-nav__menu-btn");
+  var promptClosed = navMain.querySelector(".a11y-menu-btn:first-child");
+  var promptOpened = navMain.querySelector(".a11y-menu-btn:nth-child(2)");
 
   navMain.classList.remove('main-nav--nojs');
-
   menuBtn.addEventListener('click', function() {
     if (navMain.classList.contains('main-nav--closed')) {
       navMain.classList.remove('main-nav--closed');
+      promptClosed.classList.remove("a11y-menu-btn--show");
+      promptOpened.classList.add("a11y-menu-btn--show");
     } else {
       navMain.classList.add('main-nav--closed');
+      promptClosed.classList.add("a11y-menu-btn--show");
+      promptOpened.classList.remove("a11y-menu-btn--show");
     }
   });
 }
