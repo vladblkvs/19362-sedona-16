@@ -9,8 +9,8 @@
 }
 
 .photo-gallery__tile {
-  padding: 22px @side-padding 18px;
   margin: 0 auto;
+  padding: 22px @side-padding 18px;
   border-top: 1px solid #e5e5e5;
 
   &:last-child {
@@ -20,18 +20,18 @@
 
 @media (min-width: @tablet-width) {
   .photo-gallery__tiles {
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     max-width: 648px;
+    margin: 0 auto;
   }
 
   .photo-gallery__tile {
-    padding: 0;
-    margin: 0;
     width: 50%;
-    border: none;
+    margin: 0;
+    padding: 0;
     background-color: #f2f2f2;
+    border: none;
 
     &:nth-child(2n+1) {
       background-color: #eaeaea;
@@ -43,16 +43,16 @@
   }
 
   .photo-gallery__tile.photo-gallery__tile--wide {
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
     background-color: #f2f2f2;
   }
 }
 
 @media (min-width: @desktop-width) {
   .photo-gallery {
-    margin: 0 auto;
     max-width: 1200px;
+    margin: 0 auto;
   }
 
   .photo-gallery__tiles {

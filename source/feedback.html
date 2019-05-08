@@ -30,8 +30,8 @@
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__menu-btn" type="button">
-            <span class="a11y-menu-btn visually-hidden">Открыть меню</span>
-            <span class="a11y-menu-btn visually-hidden">Закрыть меню</span>
+            <span class="main-nav__a11y-menu-btn visually-hidden">Открыть меню</span>
+            <span class="main-nav__a11y-menu-btn visually-hidden">Закрыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -114,11 +114,11 @@
             <div class="feedback__fields">
               <h3 class="feedback__field-title">Ваше общее впечатление:</h3>
               <div class="feedback__options">
-                <input class="radio visually-hidden" id="positive" type="radio" name="Overall imspanssion" value="positive" checked>
+                <input class="feedback__radio visually-hidden" id="positive" type="radio" name="Overall imspanssion" value="positive" checked>
                 <label class="feedback__option-title" for="positive">Скорее положительное</label>
-                <input class="radio visually-hidden" id="negative" type="radio" name="Overall imspanssion" value="negative">
+                <input class="feedback__radio visually-hidden" id="negative" type="radio" name="Overall imspanssion" value="negative">
                 <label class="feedback__option-title" for="negative">Скорее отрицательное</label>
-                <input class="radio visually-hidden" id="hard-to-answer" type="radio" name="Overall imspanssion" value="hard to answer">
+                <input class="feedback__radio visually-hidden" id="hard-to-answer" type="radio" name="Overall imspanssion" value="hard to answer">
                 <label class="feedback__option-title" for="hard-to-answer">Затрудняюсь ответить</label>
               </div>
             </div>
@@ -127,14 +127,30 @@
             <div class="feedback__fields">
               <h3 class="feedback__field-title">Посещенные<br>достопримечательности:</h3>
               <div class="feedback__options">
-                <input class="checkbox visually-hidden" id="devil-bridge" type="checkbox" name="Attractions" value="Bridge of Devil" checked>
-                <label class="feedback__option-title" for="devil-bridge">Мост Дьявола</label>
-                <input class="checkbox visually-hidden" id="bell-rock" type="checkbox" name="Attractions" value="Bell Rock" checked>
-                <label class="feedback__option-title" for="bell-rock">Гора-Колокол</label>
-                <input class="checkbox visually-hidden" id="slide-park" type="checkbox" name="Attractions" value="Slide Rock State Park" checked>
-                <label class="feedback__option-title" for="slide-park">Слайд-парк</label>
-                <input class="checkbox visually-hidden" id="red-rocks" type="checkbox" name="Attractions" value="Red Rock State Park">
-                <label class="feedback__option-title" for="red-rocks">Красные скалы</label>
+                <input class="feedback__checkbox visually-hidden" id="devil-bridge" type="checkbox" name="Attractions" value="Bridge of Devil" checked>
+                <label class="feedback__option-title" for="devil-bridge">
+                  <svg class="feedback__check-icon" width="56" height="56">
+                    <use xlink:href="#icon-tick"></use>
+                  </svg>
+                  Мост Дьявола</label>
+                <input class="feedback__checkbox visually-hidden" id="bell-rock" type="checkbox" name="Attractions" value="Bell Rock" checked>
+                <label class="feedback__option-title" for="bell-rock">
+                  <svg class="feedback__check-icon" width="56" height="56">
+                    <use xlink:href="#icon-tick"></use>
+                  </svg>
+                  Гора-Колокол</label>
+                <input class="feedback__checkbox visually-hidden" id="slide-park" type="checkbox" name="Attractions" value="Slide Rock State Park" checked>
+                <label class="feedback__option-title" for="slide-park">
+                  <svg class="feedback__check-icon" width="56" height="56">
+                    <use xlink:href="#icon-tick"></use>
+                  </svg>
+                  Слайд-парк</label>
+                <input class="feedback__checkbox visually-hidden" id="red-rocks" type="checkbox" name="Attractions" value="Red Rock State Park">
+                <label class="feedback__option-title" for="red-rocks">
+                  <svg class="feedback__check-icon" width="56" height="56">
+                    <use xlink:href="#icon-tick"></use>
+                  </svg>
+                  Красные скалы</label>
               </div>
             </div>
           </div>

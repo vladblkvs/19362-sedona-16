@@ -1,9 +1,9 @@
 .recommended-list {
   .list-style-none;
+  max-width: 320px;
+  margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 29px;
-  margin: 0 auto;
-  max-width: 320px;
 }
 
 .recommended-list__item {
@@ -53,15 +53,15 @@
 
 @media (min-width: @tablet-width) {
   .recommended-list {
-    padding: 0;
-    max-width: 100%;
     flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0;
   }
 
   .recommended-list__item {
-    padding: 159px 45px 61px;
     width: 33.333333%;
     min-height: 330px;
+    padding: 159px 45px 61px;
   }
 
   .recommended-list__item--lodging {
