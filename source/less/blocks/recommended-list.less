@@ -1,9 +1,9 @@
 .recommended-list {
   .list-style-none;
+  max-width: 320px;
+  margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 29px;
-  margin: 0 auto;
-  max-width: 320px;
 }
 
 .recommended-list__item {
@@ -45,23 +45,23 @@
 .recommended-list__description {
   margin: 14px 0 0 0;
   text-align: left;
-}
 
-.recommended-list__description br {
-  display: none;
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .recommended-list {
-    padding: 0;
-    max-width: 100%;
     flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0;
   }
 
   .recommended-list__item {
-    padding: 159px 45px 61px;
     width: 33.333333%;
     min-height: 330px;
+    padding: 159px 45px 61px;
   }
 
   .recommended-list__item--lodging {
@@ -103,10 +103,14 @@
   .recommended-list__description {
     margin-top: 21px;
     text-align: center;
-  }
 
-  .recommended-list__description br {
-    display: inline;
+    & span {
+      display: none;
+    }
+
+    & br {
+      display: inline;
+    }
   }
 }
 

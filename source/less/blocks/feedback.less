@@ -1,0 +1,389 @@
+.feedback {
+  background-color: #ffffff;
+}
+
+.feedback__form {
+  padding-bottom: 37px;
+}
+
+.feedback__form-wrapper {
+  padding: 17px @side-padding 22px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.feedback__fields {
+  max-width: 648px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+.feedback__field-title {
+  .text-title;
+  width: 100%;
+  margin: 0;
+}
+
+.feedback__input-field {
+  margin: 20px 0 0;
+}
+
+.feedback__form-wrapper--contacts .feedback__input-field {
+  margin-top: 12px;
+
+  &:first-of-type {
+    margin-top: 20px;
+  }
+}
+
+.feedback__option-title {
+  font-size: @font-size-title;
+  line-height: @line-height-title;
+  font-weight: 700;
+  color: @color-title;
+  text-transform: none;
+}
+
+.feedback__form-wrapper--imspanssions .feedback__option-title {
+  margin-top: 13px;
+
+  &:first-of-type {
+    margin-top: 23px;
+  }
+}
+
+.feedback__form-wrapper--visited-sights .feedback__option-title {
+  margin-top: 24px;
+
+  &:first-of-type {
+    margin-top: 17px;
+  }
+}
+
+.feedback__form-wrapper--emotions .feedback__input-field {
+  margin-top: 17px;
+}
+
+.feedback__submit-wrapper {
+  margin: 0;
+  padding: 29px @side-padding 0;
+
+  & span {
+    display: none;
+  }
+}
+
+.feedback__submit-btn {
+  width: 100%;
+  max-width: 648px;
+  margin: 0 auto;
+}
+
+.feedback__options {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.feedback__form-wrapper--imspanssions .feedback__option-title::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 56px;
+  height: 56px;
+  margin-right: 23px;
+  background-color: #f2f2f2;
+}
+
+.feedback__option-title:hover::before,
+.feedback__option-title:focus::before {
+  background-color: #e5e5e5;
+}
+
+.feedback__option-title:active::before {
+  background-color: #d5d5d5;
+}
+
+.feedback__radio + .feedback__option-title::before {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.feedback__radio:checked + .feedback__option-title::before {
+  background-color: #333333;
+  border: 17px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.feedback__radio:checked:hover + .feedback__option-title::before,
+.feedback__radio:checked:focus + .feedback__option-title::before {
+  border-color: #e5e5e5;
+}
+
+.feedback__radio:checked:active + .feedback__option-title::before {
+  background-color: #a4a4a4;
+  border-color: #d5d5d5;
+}
+
+.feedback__check-icon {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  margin-right: 21px;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  fill: none;
+}
+
+.feedback__checkbox:hover + .feedback__option-title .feedback__check-icon,
+.feedback__check-icon:hover,
+.feedback__checkbox:focus + .feedback__option-title .feedback__check-icon,
+.feedback__check-icon:focus {
+  background-color: #e5e5e5;
+}
+
+.feedback__checkbox:active + .feedback__option-title .feedback__check-icon,
+.feedback__check-icon:active {
+  background-color: #d5d5d5;
+}
+
+.feedback__checkbox:checked + .feedback__option-title .feedback__check-icon {
+  fill: #333333;
+}
+
+.feedback__checkbox:checked:hover + .feedback__option-title .feedback__check-icon,
+.feedback__checkbox:checked:focus + .feedback__option-title .feedback__check-icon {
+  fill: #333333;
+}
+
+.feedback__checkbox:checked:active + .feedback__option-title .feedback__check-icon {
+  fill-opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 61px;
+  }
+
+  .feedback__form::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: calc(50% - 1px);
+    display: block;
+    width: 1px;
+    height: 292px;
+    background-color: #e5e5e5;
+  }
+
+  .feedback__form-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+    border: none;
+  }
+
+  .feedback__form-wrapper .feedback__fields {
+    max-width: 960px;
+  }
+
+  .feedback__form-wrapper--user-info {
+    order: 2;
+    max-width: 540px;
+    padding-left: 58px;
+    width: 50%;
+  }
+
+  .feedback__form-wrapper--user-info .feedback__input-field:first-of-type {
+    margin-top: 57px;
+  }
+
+  .feedback__form-wrapper--contacts {
+    order: 3;
+    width: 100%;
+    padding-top: 48px;
+  }
+
+  .feedback__form-wrapper--contacts .feedback__input-field {
+    margin-top: 23px;
+
+    &:first-of-type {
+      margin-top: 24px;
+    }
+  }
+
+  .feedback__form-wrapper--imspanssions {
+    order: 1;
+    width: 50%;
+    max-width: 540px;
+    padding-right: 50px;
+  }
+
+  .feedback__form-wrapper--imspanssions .feedback__option-title {
+    margin-top: 22px;
+
+    &:first-of-type {
+      margin-top: 59px;
+    }
+  }
+
+  .feedback__form-wrapper--visited-sights {
+    order: 4;
+    width: 100%;
+    padding-top: 31px;
+  }
+
+  .feedback__form-wrapper--emotions {
+    order: 5;
+    width: 100%;
+    padding-top: 46px;
+  }
+
+  .feedback__form-wrapper--emotions .feedback__input-field {
+    margin-top: 57px;
+  }
+
+  .feedback__submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+    width: 100%;
+    max-width: 1080px;
+    padding: 36px 60px 0;
+
+    & span {
+      display: inline;
+    }
+  }
+
+  .feedback__submit-btn {
+    width: 50%;
+    margin: 0;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__options {
+    flex-direction: row;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 11px;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__option-title {
+    max-width: 240px;
+    margin-top: 32px;
+
+    &:first-of-type {
+      margin-top: 32px;
+    }
+
+    &:nth-of-type(2n+1) {
+      flex-grow: 1;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 19px;
+    }
+  }
+
+  .feedback__field-title {
+    position: relative;
+    font-size: @font-size-extra;
+  }
+
+  .feedback__form-wrapper--contacts .feedback__field-title::before,
+  .feedback__form-wrapper--contacts .feedback__field-title::after,
+  .feedback__form-wrapper--visited-sights .feedback__field-title::before,
+  .feedback__form-wrapper--visited-sights .feedback__field-title::after,
+  .feedback__form-wrapper--emotions .feedback__field-title::before,
+  .feedback__form-wrapper--emotions .feedback__field-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 19.29%;
+    min-width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .feedback__field-title::before {
+    left: 0;
+  }
+
+  .feedback__field-title::after {
+    right: 0;
+  }
+
+  .feedback__options {
+    max-width: 480px;
+  }
+
+  .feedback__form-wrapper--user-info .feedback__field-title,
+  .feedback__form-wrapper--imspanssions .feedback__field-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__form-wrapper {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .feedback__form-wrapper--user-info {
+    padding-left: 78px;
+  }
+
+  .feedback__form-wrapper--imspanssions .feedback__field-title {
+    padding-left: 76px;
+  }
+
+  .feedback__form-wrapper--user-info,
+  .feedback__form-wrapper--imspanssions {
+    max-width: 600px;
+  }
+
+  .feedback__form-wrapper--contacts .feedback__fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feedback__options {
+    max-width: 960px;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__options {
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__option-title:not(:first-of-type) {
+    margin-left: 60px;
+  }
+
+  .feedback__form-wrapper--visited-sights .feedback__option-title:nth-of-type(2n+1) {
+    flex-grow: 0;
+  }
+
+  .feedback__submit-wrapper {
+    max-width: 1200px;
+    padding: 36px 120px 0;
+  }
+
+  .feedback__form-wrapper--contacts .feedback__field-title::before,
+  .feedback__form-wrapper--contacts .feedback__field-title::after,
+  .feedback__form-wrapper--visited-sights .feedback__field-title::before,
+  .feedback__form-wrapper--visited-sights .feedback__field-title::after,
+  .feedback__form-wrapper--emotions .feedback__field-title::before,
+  .feedback__form-wrapper--emotions .feedback__field-title::after {
+    width: 280px;
+  }
+}

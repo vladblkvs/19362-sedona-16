@@ -8,8 +8,8 @@
   right: 20px;
   width: 23px;
   height: 22px;
-  border: 0;
   background: url("/img/icon-cross.svg") no-repeat center;
+  border: 0;
 }
 
 .main-nav--closed .main-nav__menu-btn {
@@ -20,7 +20,15 @@
   display: none;
 }
 
-@media (max-width: calc(@tablet-width - 1px)) {
+.main-nav__a11y-menu-btn {
+  display: none;
+}
+
+.main-nav__a11y-menu-btn--show {
+  display: inline;
+}
+
+@media (max-width: @tablet-width - 1px) {
   .main-nav--closed .main-nav__wrapper {
     display: none;
   }
