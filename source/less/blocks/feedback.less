@@ -37,7 +37,6 @@
 }
 
 .feedback__option-title {
-  min-width: 207px;
   font-size: @font-size-title;
   line-height: @line-height-title;
   font-weight: 700;
@@ -279,7 +278,31 @@
   }
 
   .feedback__field-title {
+    position: relative;
     font-size: @font-size-extra;
+  }
+
+  .feedback__form-wrapper--contacts .feedback__field-title::before,
+  .feedback__form-wrapper--contacts .feedback__field-title::after,
+  .feedback__form-wrapper--visited-sights .feedback__field-title::before,
+  .feedback__form-wrapper--visited-sights .feedback__field-title::after,
+  .feedback__form-wrapper--emotions .feedback__field-title::before,
+  .feedback__form-wrapper--emotions .feedback__field-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 19.29%;
+    min-width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .feedback__field-title::before {
+    left: 0;
+  }
+
+  .feedback__field-title::after {
+    right: 0;
   }
 
   .feedback__options {
@@ -326,22 +349,25 @@
     padding-left: 0;
   }
 
-  .feedback__form-wrapper--visited-sights .feedback__option-title:nth-of-type(2n) {
-    margin-left: 0;
+  .feedback__form-wrapper--visited-sights .feedback__option-title:not(:first-of-type) {
+    margin-left: 66px;
   }
 
-  .feedback__form-wrapper--contacts .input-field__label--atop {
-    padding: 0;
-    margin-right: 16px;
-    width: fit-content;
-
-    & span {
-      display: none;
-    }
+  .feedback__form-wrapper--visited-sights .feedback__option-title:nth-of-type(2n+1) {
+    flex-grow: 0;
   }
 
   .feedback__submit-wrapper {
     padding: 36px 120px 0;
     max-width: 1200px;
+  }
+
+  .feedback__form-wrapper--contacts .feedback__field-title::before,
+  .feedback__form-wrapper--contacts .feedback__field-title::after,
+  .feedback__form-wrapper--visited-sights .feedback__field-title::before,
+  .feedback__form-wrapper--visited-sights .feedback__field-title::after,
+  .feedback__form-wrapper--emotions .feedback__field-title::before,
+  .feedback__form-wrapper--emotions .feedback__field-title::after {
+    width: 280px;
   }
 }
