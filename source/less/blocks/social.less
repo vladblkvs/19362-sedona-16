@@ -27,11 +27,15 @@
     background-color: @button-active;
   }
 
-  & svg {
+  svg {
     fill: @color-contrast;
   }
 
   &:active svg {
     opacity: 0.3;
   }
+}
+
+.social__item:nth-child(2n) .social__link {
+  width: 47px;
 }

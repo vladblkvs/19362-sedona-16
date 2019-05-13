@@ -56,7 +56,7 @@
     <main class="page-main">
 
       <section class="page-cover">
-        <div class="page-cover__wrapper">
+        <div class="page-cover__wrapper page-cover__wrapper--photo">
           <div class="page-cover__image page-cover__image--secondary-page">
             <img class="page-cover__logo" src="/img/text-sedona.svg" width="229" height="39" alt="SEDONA">
           </div>
@@ -182,8 +182,8 @@
       <section class="video">
         <div class="video__wrapper">
           <h2 class="visually-hidden">Видеопрезентация</h2>
-          <h3 class="main-question">Все еще сомневаетесь?</h3>
-          <p class="main-offer">Смотрите видеопрезентацию и скорее за билетами, пока<span>&nbsp;</span><br>они не подорожали в очередной раз!</p>
+          <h3 class="video__question main-question">Все еще сомневаетесь?</h3>
+          <p class="video__main-offer main-offer">Смотрите видеопрезентацию и скорее за билетами, пока<span>&nbsp;</span><br>они не подорожали в очередной раз!</p>
           <picture class="video__image">
             <source type="image/webp" media="(min-width: 1200px)" srcset="/img/video-desktop@1x.webp 1x, /img/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="/img/video-tablet@1x.webp 1x, /img/video-tablet@2x.webp 2x">
@@ -201,9 +201,9 @@
               </button>
             <div class="video__volume-scale-container">
               <div class="video__volume-scale">
-                <div class="video__volume-toggle">
+                <button class="video__volume-toggle">
                   <span class="visually-hidden">Переключатель громкости</span>
-                </div>
+                </button>
               </div>
             </div>
             <button class="video__control video__subtitles-btn" title="Показать субтитры">

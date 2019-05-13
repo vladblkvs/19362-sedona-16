@@ -4,14 +4,14 @@ if (navMain) {
   var promptClosed = navMain.querySelector(".main-nav__a11y-menu-btn:first-child");
   var promptOpened = navMain.querySelector(".main-nav__a11y-menu-btn:nth-child(2)");
 
-  navMain.classList.remove('main-nav--nojs');
-  menuBtn.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
+  navMain.classList.remove("main-nav--nojs");
+  menuBtn.addEventListener("click", function() {
+    if (navMain.classList.contains("main-nav--closed")) {
+      navMain.classList.remove("main-nav--closed");
       promptClosed.classList.remove("main-nav__a11y-menu-btn--show");
       promptOpened.classList.add("main-nav__a11y-menu-btn--show");
     } else {
-      navMain.classList.add('main-nav--closed');
+      navMain.classList.add("main-nav--closed");
       promptClosed.classList.add("main-nav__a11y-menu-btn--show");
       promptOpened.classList.remove("main-nav__a11y-menu-btn--show");
     }

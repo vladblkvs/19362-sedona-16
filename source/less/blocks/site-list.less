@@ -1,5 +1,5 @@
 .site-list {
-  .list-style-none;
+  .list-style-none();
   text-align: center;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .site-list__item a {
-  .text-menu;
+  .text-menu();
   display: block;
   padding: 7px 0;
   color: @color-contrast;
@@ -68,7 +68,9 @@
   }
 
   .site-list__item a {
+    padding: 15px 0;
     font-size: 14px;
+    line-height: @line-height-title;
     color: #000000;
 
     &:hover,
