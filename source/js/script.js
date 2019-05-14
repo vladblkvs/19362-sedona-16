@@ -88,3 +88,36 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+var locationBlock = document.querySelector(".location");
+if (locationBlock) {
+  function initMap() {
+    var map = new google.maps.Map(document.querySelector(".location__google-maps"), {
+      zoom: 7,
+      center: {
+        lat: 34.9397395,
+        lng: -111.7609896
+      }
+    });
+
+    var image = {
+      url: "/img/icon-map-marker.svg",
+      scaledSize: new google.maps.Size(27, 27)
+    }
+
+    var beachMarker = new google.maps.Marker({
+      position: {
+        lat: 34.8097395,
+        lng: -111.7609896
+      },
+      map: map,
+      icon: image
+    });
+  }
+
+  var script = document.createElement("script");
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCwikDmtcCJ77yB9lKK91KehqoPH4L_O4Y&callback=initMap";
+  script.defer = true;
+
+  document.head.appendChild(script);
+}

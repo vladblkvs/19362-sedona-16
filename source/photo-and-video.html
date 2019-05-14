@@ -45,7 +45,7 @@
                 <a href="/feedback.html">Форма отзыва</a>
               </li>
               <li class="site-list__item">
-                <a href="https://htmlacademy.ru">HTML Academy</a>
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -72,22 +72,25 @@
           <h2 class="visually-hidden">Галерея фотографий</h2>
           <ul class="photo-gallery__tiles">
             <li class="photo-gallery__tile photo-gallery__tile--wide">
-              <div class="photo-item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="/img/photo-sunset-desktop@1x.webp 1x, /img/photo-sunset-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-sunset-tablet@1x.webp 1x, /img/photo-sunset-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="/img/photo-sunset-mobile@1x.webp 1x, /img/photo-sunset-mobile@2x.webp 2x">
+              <div class="photo-gallery__item photo-item">
+                <a class="photo-item__link" href="/img/photo-sunset-desktop@2x.jpg" title="Полная версия фотографии «Закат»">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="/img/photo-sunset-desktop@1x.webp 1x, /img/photo-sunset-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-sunset-tablet@1x.webp 1x, /img/photo-sunset-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="/img/photo-sunset-mobile@1x.webp 1x, /img/photo-sunset-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="/img/photo-sunset-desktop@1x.jpg 1x, /img/photo-sunset-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="/img/photo-sunset-tablet@1x.jpg 1x, /img/photo-sunset-tablet@2x.jpg 2x">
-                  <img src="/img/photo-sunset-mobile@1x.jpg" srcset="/img/photo-sunset-mobile@2x.jpg 2x" alt="Закат">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="/img/photo-sunset-desktop@1x.jpg 1x, /img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="/img/photo-sunset-tablet@1x.jpg 1x, /img/photo-sunset-tablet@2x.jpg 2x">
+                    <img src="/img/photo-sunset-mobile@1x.jpg" srcset="/img/photo-sunset-mobile@2x.jpg 2x" alt="Закат">
+                  </picture>
+                </a>
                 <div class="photo-item__footer">
                   <div class="photo-item__info">
                     <h3 class="photo-item__title">Неродные просторы</h3>
                     <p class="photo-item__author">Автор фото: Борис</p>
                   </div>
                   <button class="photo-item__like-btn" type="button">
+                    <title>Поставить лайк</title>
                     <svg class="photo-item__like-icon" width="22" height="20">
                       <use xlink:href="#icon-like"></use>
                     </svg>
@@ -98,16 +101,18 @@
               </div>
             </li>
             <li class="photo-gallery__tile">
-              <div class="photo-item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="/img/photo-cactus-desktop@1x.webp 1x, /img/photo-cactus-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-cactus-tablet@1x.webp 1x, /img/photo-cactus-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="/img/photo-cactus-mobile@1x.webp 1x, /img/photo-cactus-mobile@2x.webp 2x">
+              <div class="photo-gallery__item photo-item">
+                <a class="photo-item__link" href="/img/photo-cactus-desktop@2x.jpg" title="Полная версия фотографии «Кактус»">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="/img/photo-cactus-desktop@1x.webp 1x, /img/photo-cactus-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-cactus-tablet@1x.webp 1x, /img/photo-cactus-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="/img/photo-cactus-mobile@1x.webp 1x, /img/photo-cactus-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="/img/photo-cactus-desktop@1x.jpg 1x, /img/photo-cactus-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="/img/photo-cactus-tablet@1x.jpg 1x, /img/photo-cactus-tablet@2x.jpg 2x">
-                  <img src="/img/photo-cactus-mobile@1x.jpg" srcset="/img/photo-cactus-mobile@2x.jpg 2x" alt="Кактус">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="/img/photo-cactus-desktop@1x.jpg 1x, /img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="/img/photo-cactus-tablet@1x.jpg 1x, /img/photo-cactus-tablet@2x.jpg 2x">
+                    <img src="/img/photo-cactus-mobile@1x.jpg" srcset="/img/photo-cactus-mobile@2x.jpg 2x" alt="Кактус">
+                  </picture>
+                </a>
                 <div class="photo-item__footer">
                   <div class="photo-item__info">
                     <h3 class="photo-item__title">Местная растительность</h3>
@@ -115,6 +120,7 @@
                   </div>
                   <button class="photo-item__like-btn" type="button">
                     <svg class="photo-item__like-icon" width="22" height="20">
+                      <title>Поставить лайк</title>
                       <use xlink:href="#icon-like"></use>
                     </svg>
                     <span class="photo-item__like-count">143</span>
@@ -124,16 +130,18 @@
               </div>
             </li>
             <li class="photo-gallery__tile">
-              <div class="photo-item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="/img/photo-roads-desktop@1x.webp 1x, /img/photo-roads-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-roads-tablet@1x.webp 1x, /img/photo-roads-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="/img/photo-roads-mobile@1x.webp 1x, /img/photo-roads-mobile@2x.webp 2x">
+              <div class="photo-gallery__item photo-item">
+                <a class="photo-item__link" href="/img/photo-roads-desktop@2x.jpg" title="Полная версия фотографии «Дороги»">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="/img/photo-roads-desktop@1x.webp 1x, /img/photo-roads-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-roads-tablet@1x.webp 1x, /img/photo-roads-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="/img/photo-roads-mobile@1x.webp 1x, /img/photo-roads-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="/img/photo-roads-desktop@1x.jpg 1x, /img/photo-roads-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="/img/photo-roads-tablet@1x.jpg 1x, /img/photo-roads-tablet@2x.jpg 2x">
-                  <img src="/img/photo-roads-mobile@1x.jpg" srcset="/img/photo-roads-mobile@2x.jpg 2x" alt="Дороги">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="/img/photo-roads-desktop@1x.jpg 1x, /img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="/img/photo-roads-tablet@1x.jpg 1x, /img/photo-roads-tablet@2x.jpg 2x">
+                    <img src="/img/photo-roads-mobile@1x.jpg" srcset="/img/photo-roads-mobile@2x.jpg 2x" alt="Дороги">
+                  </picture>
+                </a>
                 <div class="photo-item__footer">
                   <div class="photo-item__info">
                     <h3 class="photo-item__title">Дорога на север</h3>
@@ -141,6 +149,7 @@
                   </div>
                   <button class="photo-item__like-btn" type="button">
                     <svg class="photo-item__like-icon" width="22" height="20">
+                      <title>Поставить лайк</title>
                       <use xlink:href="#icon-like"></use>
                     </svg>
                     <span class="photo-item__like-count">96</span>
@@ -150,16 +159,18 @@
               </div>
             </li>
             <li class="photo-gallery__tile">
-              <div class="photo-item">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="/img/photo-bridge-desktop@1x.webp 1x, /img/photo-bridge-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-bridge-tablet@1x.webp 1x, /img/photo-bridge-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="/img/photo-bridge-mobile@1x.webp 1x, /img/photo-bridge-mobile@2x.webp 2x">
+              <div class="photo-gallery__item photo-item">
+                <a class="photo-item__link" href="/img/photo-bridge-desktop@2x.jpg" title="Полная версия фотографии «Мост»">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="/img/photo-bridge-desktop@1x.webp 1x, /img/photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-bridge-tablet@1x.webp 1x, /img/photo-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="/img/photo-bridge-mobile@1x.webp 1x, /img/photo-bridge-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="/img/photo-bridge-desktop@1x.jpg 1x, /img/photo-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="/img/photo-bridge-tablet@1x.jpg 1x, /img/photo-bridge-tablet@2x.jpg 2x">
-                  <img src="/img/photo-bridge-mobile@1x.jpg" srcset="/img/photo-bridge-mobile@2x.jpg 2x" alt="Мост">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="/img/photo-bridge-desktop@1x.jpg 1x, /img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="/img/photo-bridge-tablet@1x.jpg 1x, /img/photo-bridge-tablet@2x.jpg 2x">
+                    <img src="/img/photo-bridge-mobile@1x.jpg" srcset="/img/photo-bridge-mobile@2x.jpg 2x" alt="Мост">
+                  </picture>
+                </a>
                 <div class="photo-item__footer">
                   <div class="photo-item__info">
                     <h3 class="photo-item__title">Мост дьявола</h3>
@@ -167,6 +178,7 @@
                   </div>
                   <button class="photo-item__like-btn" type="button">
                     <svg class="photo-item__like-icon" width="22" height="20">
+                      <title>Поставить лайк</title>
                       <use xlink:href="#icon-like"></use>
                     </svg>
                     <span class="photo-item__like-count">254</span>
@@ -194,8 +206,9 @@
             <img src="/img/video-mobile@1x.jpg" srcset="/img/video-mobile@2x.jpg 2x" alt="Видео">
           </picture>
           <div class="video__controls-wrapper">
-            <button class="video__control video__replay-btn" title="Начать видео сначала">
+            <button class="video__control video__replay-btn">
                 <svg width="16" height="20">
+                  <title>Начать видео сначала</title>
                   <use xlink:href="#icon-video-replay"></use>
                 </svg>
               </button>
@@ -206,13 +219,15 @@
                 </button>
               </div>
             </div>
-            <button class="video__control video__subtitles-btn" title="Показать субтитры">
+            <button class="video__control video__subtitles-btn">
                 <svg width="32" height="20">
+                  <title>Показать субтитры</title>
                   <use xlink:href="#icon-video-subtitles"></use>
                 </svg>
               </button>
-            <button class="video__control video__fullscreen-btn" title="Развернуть видео на весь экран">
+            <button class="video__control video__fullscreen-btn">
                 <svg width="20" height="20">
+                  <title>Развернуть видео на весь экран</title>
                   <use xlink:href="#icon-video-fullscreen"></use>
                 </svg>
               </button>

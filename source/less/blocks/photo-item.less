@@ -7,6 +7,16 @@
   display: block;
 }
 
+.photo-item__link:hover img,
+.photo-item__link:focus img {
+  opacity: 0.8;
+}
+
+.photo-item__link:focus img {
+  outline: 2px solid @color-feature;
+  outline-offset: -5px;
+}
+
 .photo-item__title {
   margin: 15px 0  0;
   font-size: @font-size-base;
@@ -22,6 +32,7 @@
 .photo-item__like-btn {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-top: 7px;
   padding: 0;
   background-color: transparent;
@@ -29,7 +40,7 @@
 }
 
 .photo-item__like-icon {
-  margin-right: 15px;
+  margin: -3px 15px 0 0;
   fill: #b2b2b2;
 }
 
@@ -67,7 +78,7 @@
   }
 
   .photo-item__like-icon {
-    margin-right: 10px;
+    margin: -4px 10px 0 0;
     fill: #a9a9a9;
   }
 
