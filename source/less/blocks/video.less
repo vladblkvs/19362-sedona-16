@@ -69,6 +69,16 @@
   svg {
     fill: #5c6870;
   }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #333333;
+  }
+
+  &:active svg {
+    fill: #333333;
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -113,6 +123,17 @@
 
     svg {
       fill: #ffffff;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: #ffffff;
+      fill-opacity: 0.6;
+    }
+
+    &:active svg {
+      fill: #ffffff;
+      fill-opacity: 0.3;
     }
   }
 }

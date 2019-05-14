@@ -24,6 +24,7 @@ gulp.task("css", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(cssnano())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -77,10 +78,9 @@ gulp.task("js", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-      "source/site.webmanifest",
+      "source/manifest/site.webmanifest",
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**",
-      "source/*.{ico,png}",
       "!source/img/sprite/**",
       "!source/img/bg-triangle.svg",
       "!source/img/bg-intro-triangle-*.svg"
