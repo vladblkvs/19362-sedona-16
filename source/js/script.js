@@ -91,6 +91,8 @@ window.addEventListener("keydown", function(evt) {
 
 var locationBlock = document.querySelector(".location");
 if (locationBlock) {
+  locationBlock.classList.remove("location--nojs");
+
   function initMap() {
     var map = new google.maps.Map(document.querySelector(".location__google-maps"), {
       zoom: 7,
