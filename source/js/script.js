@@ -103,7 +103,7 @@ if (locationBlock) {
     });
 
     var image = {
-      url: "/img/icon-map-marker.svg",
+      url: "img/icon-map-marker.svg",
       scaledSize: new google.maps.Size(27, 27)
     }
 
