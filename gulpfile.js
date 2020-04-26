@@ -4,7 +4,7 @@ var less = require("gulp-less");
 var sourcemap = require("gulp-sourcemaps");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var cssnano = require("gulp-cssnano");
+var csso = require("gulp-csso");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
@@ -25,7 +25,7 @@ gulp.task("css", function() {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(cssnano())
+    .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
